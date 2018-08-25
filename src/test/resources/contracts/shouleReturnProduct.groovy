@@ -5,12 +5,8 @@ org.springframework.cloud.contract.spec.Contract.make {
     }
     response {
         status 200
-        body("""
-  {
-    "id": 1,
-    "name": "apple"
-  }
-  """)
+        body
+                "./product.json"
         headers {
             header('Content-Type': "application/json;charset=UTF-8")
         }
